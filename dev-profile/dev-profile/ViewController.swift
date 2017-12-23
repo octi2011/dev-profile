@@ -9,17 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var profileImgView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Helpers.makeImageCornersRound(radius: 8, image: profileImgView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    //in stackViews you can only add constraints to the first element whne fill equally is checked
 }
-
