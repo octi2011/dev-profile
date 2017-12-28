@@ -46,6 +46,9 @@
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
+                                </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="52q-kA-DsS">
                                 <rect key="frame" x="24" y="316" width="327" height="156"/>
@@ -55,6 +58,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="UNM-en-jEh" secondAttribute="height" multiplier="1:1" id="vof-Cc-aSY"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="vof-Cc-aSY"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="kjR-tW-6x0">
                                         <rect key="frame" x="171" y="0.0" width="156" height="156"/>
@@ -69,6 +77,11 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="JLG-8C-1TD" secondAttribute="height" multiplier="1:1" id="0F0-qN-o7M"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="0F0-qN-o7M"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-t7-fff">
                                         <rect key="frame" x="171" y="0.0" width="156" height="156"/>
@@ -108,6 +121,18 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoD-UK-M0V">
+                                <rect key="frame" x="214.5" y="847" width="339" height="70"/>
+                                <color key="backgroundColor" red="0.87985802664974622" green="0.22457398174482787" blue="0.03014004365378126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="Qzn-ut-Asg"/>
+                                    <constraint firstAttribute="height" constant="70" id="kKu-Z6-FLA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Customize Dashboard">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -123,28 +148,44 @@
                             <constraint firstItem="52q-kA-DsS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mum-bv-Hsc"/>
                             <constraint firstItem="bRk-76-WBl" firstAttribute="top" secondItem="pnz-SG-sI5" secondAttribute="bottom" constant="90" id="Nvf-1Z-fdA"/>
                             <constraint firstItem="52q-kA-DsS" firstAttribute="top" secondItem="0ot-OW-qxa" secondAttribute="bottom" constant="24" id="PLH-0u-bIx"/>
+                            <constraint firstItem="52q-kA-DsS" firstAttribute="top" secondItem="0ot-OW-qxa" secondAttribute="bottom" constant="50" id="PPC-KA-UO4"/>
                             <constraint firstItem="uGn-sD-bEr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="SK7-rv-jD1"/>
                             <constraint firstItem="bRk-76-WBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="XCN-1s-DMh"/>
+                            <constraint firstItem="aoD-UK-M0V" firstAttribute="top" secondItem="uGn-sD-bEr" secondAttribute="bottom" constant="48" id="aQ3-6H-snt"/>
                             <constraint firstItem="0ot-OW-qxa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c3h-iW-QVe"/>
                             <constraint firstItem="uGn-sD-bEr" firstAttribute="top" secondItem="52q-kA-DsS" secondAttribute="bottom" constant="15" id="dn8-nH-ZsB"/>
                             <constraint firstItem="0ot-OW-qxa" firstAttribute="centerY" secondItem="bRk-76-WBl" secondAttribute="centerY" constant="30" id="kTB-aA-4D1"/>
                             <constraint firstItem="0ot-OW-qxa" firstAttribute="top" secondItem="bRk-76-WBl" secondAttribute="bottom" constant="14" id="qiy-C3-qr0"/>
+                            <constraint firstItem="aoD-UK-M0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r67-nD-i9b"/>
                             <constraint firstItem="52q-kA-DsS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="v0p-wg-mB2"/>
+                            <constraint firstItem="uGn-sD-bEr" firstAttribute="top" secondItem="52q-kA-DsS" secondAttribute="bottom" constant="25" id="vx6-Q6-ueT"/>
                             <constraint firstItem="etd-7E-YbE" firstAttribute="leading" secondItem="bRk-76-WBl" secondAttribute="trailing" constant="8" id="yHr-yf-McK"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aoD-UK-M0V"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="kTB-aA-4D1"/>
                                 <exclude reference="Ekq-k3-NHZ"/>
+                                <exclude reference="PPC-KA-UO4"/>
+                                <exclude reference="kTB-aA-4D1"/>
+                                <exclude reference="vx6-Q6-ueT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="aoD-UK-M0V"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="7AL-ab-5c9"/>
+                                <include reference="Ekq-k3-NHZ"/>
+                                <exclude reference="PLH-0u-bIx"/>
+                                <include reference="PPC-KA-UO4"/>
                                 <exclude reference="c3h-iW-QVe"/>
                                 <include reference="kTB-aA-4D1"/>
                                 <exclude reference="qiy-C3-qr0"/>
-                                <exclude reference="7AL-ab-5c9"/>
-                                <include reference="Ekq-k3-NHZ"/>
+                                <exclude reference="dn8-nH-ZsB"/>
+                                <include reference="vx6-Q6-ueT"/>
                             </mask>
                         </variation>
                     </view>
@@ -158,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="136.71875" y="132.421875"/>
         </scene>
     </scenes>
     <resources>
