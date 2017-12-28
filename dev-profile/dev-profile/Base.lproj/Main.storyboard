@@ -74,7 +74,6 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="UNM-en-jEh">
                                         <rect key="frame" x="0.0" y="0.0" width="348.5" height="348.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="iB9-Rb-DBp"/>
                                             <constraint firstAttribute="width" secondItem="UNM-en-jEh" secondAttribute="height" multiplier="1:1" id="vof-Cc-aSY"/>
                                         </constraints>
                                     </imageView>
@@ -90,7 +89,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="348.5" height="348.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="JLG-8C-1TD" secondAttribute="height" multiplier="1:1" id="0F0-qN-o7M"/>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="t82-KA-dYu"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="cUx-t7-fff">
@@ -121,7 +119,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="codeImg" destination="cUx-t7-fff" id="sZh-dE-R1k"/>
+                        <outlet property="dataImg" destination="UNM-en-jEh" id="wmh-a7-8LI"/>
+                        <outlet property="imageImg" destination="kjR-tW-6x0" id="YiC-ue-3mO"/>
                         <outlet property="profileImgView" destination="bRk-76-WBl" id="GXx-Ij-3CT"/>
+                        <outlet property="videosImg" destination="JLG-8C-1TD" id="Pu5-Lj-JU2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
